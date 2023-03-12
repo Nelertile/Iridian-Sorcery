@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "iridiansorcery",
+	"version": "${version}",
+	"name": "Iridian Sorcery",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Nelertile"
+	],
+	"contact": {
+		"homepage": "https://nelertile.github.io/",
+		"sources": "https://github.com/nelertile/IridianSorcery"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/iridiansorc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.nelertile.IridianSorcery"
+		],"client": [
+			"io.github.nelertile.IridianSorceryClient"
+		],
+		"fabric-datagen": [
+			"io.github.nelertile.IridianSorceryDataGenerator"
+		]
+	},
+	"mixins": [
+		"iridiansorcery.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.17",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
